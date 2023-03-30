@@ -12,14 +12,22 @@
         android:theme="@style/Theme.AndroidKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".android.fragment.FragmentActivity"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".android.activity.ActivityLifecycle"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".kotlin.flow.FlowActivity"
+            android:exported="true"></activity>
     </application>
 
 </manifest>
